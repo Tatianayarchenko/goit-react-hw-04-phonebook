@@ -30,7 +30,7 @@ export const App = () => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
-  const formSubmitHendler = (name, number) => {
+  const formSubmitHendler = ({ name, number }) => {
     const contact = {
       id: nanoid(),
       name,
